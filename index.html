@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th, td{
+            padding: 10px;
+        }
+        th{
+            background-color: cyan;
+            color: white;
+        }
+        td{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="1">
+        <tr>
+            <th>Math</th>
+            <th>English</th>
+            <th>Programming</th>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>86</td>
+            <td>98</td>
+        </tr>
+    </table>
+    <div>
+        <p>Change The Table Width</p>
+        <button onclick="changeTableWidth('200px');">200px</button>
+        <button onclick="changeTableWidth('500px');" >500px</button>
+    </div>
+    <div>
+        <p>Change The Border and the Spacing Width</p>
+        <button onclick="changeBorderSpacing('1px')">1px</button>
+        <button onclick="changeBorderSpacing('10px')">10px</button>
+        <button onclick="changeBorderSpacing('20px')">20px</button>
+    </div>
+    <div>
+        <p>Change The Border and the Spacing Width</p>
+        <button style="background-color: orange;" onclick="changeBgColor('orange');"">&nbsp;&nbsp;&nbsp;</button>
+        <button style="background-color: blue;" onclick="changeBgColor('blue');">&nbsp;&nbsp;&nbsp;</button>
+        <button style="background-color: green;" onclick="changeBgColor('green');">&nbsp;&nbsp;&nbsp;</button>
+        <button style="background-color: red;" onclick="changeBgColor('red');">&nbsp;&nbsp;&nbsp;</button>
+    </div>
+    <br>
+    <button onclick="window.location.reload();">Reset</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
